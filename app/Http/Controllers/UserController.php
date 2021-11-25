@@ -45,4 +45,13 @@ class UserController extends Controller
   
         return print('failed');
     }
+
+    public function signOut() {
+        Session::flush();
+        Auth::logout();
+  
+        return Redirect('ahmed');
+    }
+
+    
 }

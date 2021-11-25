@@ -23,3 +23,5 @@ Route::get('/ahmed',function(){
 
 Route::post('/register',[UserController::class,'register'])->name('register');
 Route::post('/login',[UserController::class,'login'])->name('login');
+Route::post('/logout',[UserController::class,'login'])->name('login');
+Route::get('/signout', [CustomAuthController::class, 'signOut'])->name('signout');

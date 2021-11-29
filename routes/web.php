@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\MenuController;
+/*
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,15 +15,24 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/ahmed',function(){
     return view('ahmed');
 });
-
+//user
 Route::post('/register',[UserController::class,'register'])->name('register');
 Route::post('/login',[UserController::class,'login'])->name('login');
-Route::post('/logout',[UserController::class,'login'])->name('login');
+Route::post('/logout',[UserController::class,'signout'])->name('signout');
 Route::get('/signout', [CustomAuthController::class, 'signOut'])->name('signout');
+
+
+//menu
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::post('addmenu',[MenuController::class, 'tambahMenu']) -> name('tambahMenu');
+//Route::get('/addmenu',function(){
+//    return view('addmenu');
+//});

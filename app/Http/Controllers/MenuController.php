@@ -10,20 +10,20 @@ class MenuController extends Controller
         $request->validate([
             'nama_menu' => 'required',
             'harga' => 'required',
-            'images' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
-        $data = $request->all();
-        
-        print($data);
+        $nama_menu = $request['nama_menu'];
+        $harga = $request['harga'];
+        $desc = $request['deskripsi_menu'];
 
         $imageName = time().'.'.$request->image->extension();
         $request->image->move(public_path('images'), $imageName);
         
         Menu::create([
-            'nama_menu' => $data['nama_menu'],
-            'harga' =>$data['harga'],
-            'deskripsi_smenu' => $data['deskripsi_menu'],
+            'nama_menu' => $nama_menu,
+            'harga' =>$harga,
+            'deskripsi_menu' => $desc,
             'foto_menu' => $imageName,
         ]);
         return redirect("ahmed") -> withSuccess("anda telah menambah menu");

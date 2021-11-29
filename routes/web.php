@@ -32,7 +32,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('addmenu',[MenuController::class, 'tambahMenu']) -> name('tambahMenu');
+Route::post('/addmenu',[MenuController::class, 'tambahMenu']) -> name('tambahMenu');
 //Route::get('/addmenu',function(){
 //    return view('addmenu');
 //});

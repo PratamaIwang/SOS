@@ -25,7 +25,12 @@ Route::post('/register',[UserController::class,'register'])->name('register');
 Route::post('/login',[UserController::class,'login'])->name('login');
 Route::post('/logout',[UserController::class,'signout'])->name('signout');
 Route::get('/signout', [CustomAuthController::class, 'signOut'])->name('signout');
-
+Route::get('login',function(){
+    return view('login');
+});
+Route::get('register',function(){
+    return view('register');
+});
 
 //menu
 Route::get('/', function () {

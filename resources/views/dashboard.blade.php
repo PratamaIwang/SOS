@@ -73,7 +73,7 @@
 <section id="slider">
   <div id="home-carousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="item active" style="background-image:url(public/img/carousel/food-1.jpg)">
+      <div class="item active" style="background-image:url(img/carousel/food-1.jpg)">
         <div class="carousel-caption container">
           <div class="row">
             <div class="col-md-7 col-sm-12 col-xs-12">
@@ -84,7 +84,7 @@
           </div>
         </div>
       </div>
-      <div class="item" style="background-image:url(public/img/carousel/food-2.jpg)">
+      <div class="item" style="background-image:url(img/carousel/food-2.jpg)">
         <div class="carousel-caption container">
           <div class="row">
             <div class="col-md-7 col-sm-12 col-xs-12">
@@ -95,7 +95,7 @@
           </div>
         </div>
       </div>
-      <div class="item" style="background-image:url(public/img/carousel/food-3.jpg)">
+      <div class="item" style="background-image:url(img/carousel/food-3.jpg)">
         <div class="carousel-caption container">
           <div class="row">
              <div class="col-md-7 col-sm-12 col-xs-12">

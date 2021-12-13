@@ -17,22 +17,19 @@
                 <h1>Daftar dulu Dong hehe</h1>
                 <br>
                 <div class="form-outline mb-4">
-                    <input type="text" id="input-nama" class="form-control form-control-lg"
-                    placeholder="Masukin Email Kamu" />
                     <label class="form-label" for="form3Example3">Nama Kamu</label>
+                    <input type="text" id="input-nama" class="form-control form-control-lg" placeholder="Masukin Email Kamu" />
                 </div>
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                    <input type="email" id="input-nama" class="form-control form-control-lg"
-                    placeholder="Masukin Email Kamu" />
                     <label class="form-label" for="form3Example3">Email</label>
+                    <input type="email" id="input-nama" class="form-control form-control-lg" placeholder="Masukin Email Kamu" />
                 </div>
 
                 <!-- Password input -->
                 <div class="form-outline mb-3">
-                    <input type="password" id="input-nama" class="form-control form-control-lg"
-                    placeholder="Isi Juga Passwordnya disini" />
                     <label class="form-label" for="form3Example4">Password</label>
+                    <input type="password" id="input-nama" class="form-control form-control-lg" placeholder="Isi Juga Passwordnya disini" />
                 </div>
 
                 <div class="text-center text-lg-start mt-4 pt-2">

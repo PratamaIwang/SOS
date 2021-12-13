@@ -17,9 +17,6 @@ use App\Http\Controllers\MenuController;
 
 
 
-Route::get('/ahmed',function(){
-    return view('ahmed');
-});
 //user
 Route::post('/register',[UserController::class,'register'])->name('register');
 Route::post('/login',[UserController::class,'login'])->name('login');
@@ -32,13 +29,10 @@ Route::get('register',function(){
     return view('register');
 });
 
-Route::get('dashboard',function(){
-    return view('dashboard');
-});
 
 //menu
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
 });
 
 Route::post('/addmenu',[MenuController::class, 'tambahMenu']) -> name('tambahMenu');

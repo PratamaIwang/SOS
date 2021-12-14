@@ -12,22 +12,20 @@
                 <img src="{{asset('/img/food_login.png')}}" class="img-fluid"
                 alt="Sample image">
             </div>
-            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+            <div class="login-container col-md-8 col-lg-6 col-xl-4 offset-xl-1">
                 <form>
                 <h1>Login Dulu Ya</h1>
                 <br>
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                    <input type="email" id="form3Example3" class="form-control form-control-lg"
-                    placeholder="Masukin Email Kamu" />
                     <label class="form-label" for="form3Example3">Email</label>
+                    <input type="email" id="form3Example3" class="form-control form-control-lg" placeholder="Masukin Email Kamu" />
                 </div>
 
                 <!-- Password input -->
                 <div class="form-outline mb-3">
-                    <input type="password" id="form3Example4" class="form-control form-control-lg"
-                    placeholder="Isi Juga Passwordnya disini" />
                     <label class="form-label" for="form3Example4">Password</label>
+                    <input type="password" id="form3Example4" class="form-control form-control-lg" placeholder="Isi Juga Passwordnya disini" />
                 </div>
 
                 <div class="text-center text-lg-start mt-4 pt-2">

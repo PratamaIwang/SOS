@@ -16,7 +16,7 @@ class MenuController extends Controller
         $nama_menu = $request['nama_menu'];
         $harga = $request['harga'];
         $desc = $request['deskripsi_menu'];
-
+        $kategori = $request['kategori'];
         $imageName = time().'.'.$request->image->extension();
         $request->image->move(public_path('images'), $imageName);
         
@@ -24,9 +24,10 @@ class MenuController extends Controller
             'nama_menu' => $nama_menu,
             'harga' =>$harga,
             'deskripsi_menu' => $desc,
+            'kategori' => $kategori,
             'foto_menu' => $imageName,
         ]);
-        return redirect("ahmed") -> withSuccess("anda telah menambah menu");
+        return redirect("addmenu") -> withSuccess("anda telah menambah menu");
 
     }
 

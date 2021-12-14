@@ -13,12 +13,13 @@ class CreateMenusTable extends Migration
      */
     public function up()
     {
-        Schema::create('Menu', function (Blueprint $table) {
+        Schema::create('menus', function (Blueprint $table) {
             $table->bigIncrements('id_menu');
             $table->string('nama_menu');
             $table->mediumInteger('harga');
             $table->longText('deskripsi_menu');
             $table->string('foto_menu');
+            $table->string('kategori');
             $table->timestamps();
 
         });

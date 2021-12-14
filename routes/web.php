@@ -31,7 +31,7 @@ Route::get('register',function(){
 Route::get('addmenu',function(){
     return view('addMenu');
 });
-Route::get('menu',function(){
+Route::get('menu',[MenuController::class, 'getMenu'],function(){
     return view('menu');
 });
 Route::get('keranjang',function(){
@@ -48,3 +48,5 @@ Route::post('/menu/destroy',[MenuController::class, 'destroyMenu'])-> name('hapu
 //Route::get('/addmenu',function(){
 //    return view('addmenu');
 //});
+
+Route::get('/med',[MenuController::class, 'getMenu']) -> name('getMenu');

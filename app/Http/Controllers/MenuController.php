@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Menu;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MenuController extends Controller
 {
@@ -35,6 +36,11 @@ class MenuController extends Controller
         $id_menu = $request['id_menu'];
         Menu::where('id_menu',$id_menu)->delete();
         return redirect("ahmed") -> withSuccess("menu telah terhapus");
+    }
+
+    function getMenu(){
+        $menu = DB::table('menus')->get();
+        return view('menu',['menu' => $menu]);
     }
 
     

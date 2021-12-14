@@ -88,6 +88,14 @@ color: #FFF;
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 }
+
+#btn_order{
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 2%;
+}
 /* ========================================================================
   Hover End 
  ========================================================================== */

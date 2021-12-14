@@ -28,7 +28,15 @@ Route::get('login',function(){
 Route::get('register',function(){
     return view('register');
 });
-
+Route::get('addmenu',function(){
+    return view('addmenu');
+});
+Route::get('menu',function(){
+    return view('menu');
+});
+Route::get('keranjang',function(){
+    return view('keranjang');
+});
 
 //menu
 Route::get('/', function () {

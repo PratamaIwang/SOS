@@ -6,27 +6,26 @@
      
     </head>
     <body>
-    <div class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a class="scroll" href="/">Home</a></li>
-            <li><a class="scroll" href="menu">Menu</a></li>
-            <li><a class="scroll" href="keranjang">Keranjang</a></li>
-            <li><a class="scroll" href="addMenu">Tambah Menu</a></li>
-            <li><a class="scroll" href="login">Log In</a></li>
-          </ul>
+    <header id="menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-left: 1%">
+        <a class="navbar-brand" href="/">SOS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="text-align: right;">
+        <ul class="nav navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="keranjang">Keranjang</a></li>
+            <li class="nav-item active"><a class="nav-link" href="addmenu">Tambah Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="peesanan">Daftar Pesanan</a></li>
+            <li class="nav-item"><a class="nav-link" href="login">Log In</a></li>
+            <li class="nav-item"><a class="nav-link" href="logout">Log Out</a></li>
+            
+        </ul>
+            
         </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container-fluid -->
-    </div>
+    </nav>
+    </header>
   </div>
         <!-- Navigation-->
     <section class="vh-100">

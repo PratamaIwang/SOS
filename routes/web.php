@@ -29,7 +29,7 @@ Route::get('register',function(){
     return view('register');
 });
 Route::get('addmenu',function(){
-    return view('addmenu');
+    return view('addMenu');
 });
 Route::get('menu',function(){
     return view('menu');

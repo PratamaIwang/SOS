@@ -8,10 +8,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 class pesananController extends Controller
 {
-    function getPesanan(Request $request){
-        $email = $request['email'];
-        $id_pesanan = $email.'-order-'.time();
-    }
 
     function setPesanan(Request $request){
         $email = 'dummy@gmail.com';

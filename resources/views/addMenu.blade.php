@@ -31,16 +31,16 @@
         <h1>Tambah Menu </h1>
         <form action="{{ route('tambahMenu')}}" method="POST" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="nama-menu">Nama Makanan</label>
-                <input type="text" class="form-control" id="nama_menu" name="nama_menu" aria-describedby="emailHelp" placeholder="isi nama makanan">
+                <label for="nama-menu" required>Nama Makanan</label>
+                <input required type="text" class="form-control" id="nama_menu" name="nama_menu" aria-describedby="emailHelp" placeholder="isi nama makanan">
             </div>
             <div class="form-group">
-                <label for="harga">Harga Makanan</label>
-                <input type="text" class="form-control" id="harga" name="harga" placeholder="harga makanan">
+                <label for="harga" required>Harga Makanan</label>
+                <input  required type="text" class="form-control" id="harga" name="harga" placeholder="harga makanan">
             </div>
             <div class="form-group">
-                <label for="deskripsi_menu">Deskripsi Makanan</label>
-                <textarea class="form-control" name="deskripsi_menu"id="deskripsi_menu" rows="3"></textarea>
+                <label for="deskripsi_menu" required>Deskripsi Makanan</label>
+                <textarea required class="form-control" name="deskripsi_menu"id="deskripsi_menu" rows="3"></textarea>
             </div>
             <div class="form-group">
                 <label for="kategori">Kategori</label>
@@ -51,7 +51,7 @@
                 </select>
             </div>
             <br>
-            <div class="form-group">
+            <div class="form-group" required>
                 <label for="image">Masukin Foto Makanan</label>
                 <input type="file" class="form-control-file" name="image" id="image">
             </div>

@@ -15,7 +15,7 @@ class UserController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users',
-            'password' => 'required|min:6',
+            'password' => 'required|min:6|regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\x])(?=.*[!$#%]).*$/|',
         ]);
 
         $data = $request->all();
@@ -35,15 +35,15 @@ class UserController extends Controller
     public function login(Request $request){
         $request->validate([
             'email' => 'required',
-            'password' => 'required',
+            'password' => 'required|regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\x])(?=.*[!$#%]).*$/|',
         ]);
    
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
-            return print("success");
+            return view('dashboard');
         }
   
-        return print('failed');
+        return view('login');
     }
 
     public function signOut() {

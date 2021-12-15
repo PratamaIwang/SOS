@@ -36,10 +36,15 @@ class MenuController extends Controller
     public function destroyMenu(Request $request){
         $id_menu = $request['id_menu'];
         Menu::where('id_menu',$id_menu)->delete();
-        return redirect("ahmed") -> withSuccess("menu telah terhapus");
+        return redirect("menu") -> withSuccess("menu telah terhapus");
     }
 
     function getMenu(){
+        $menu = DB::table('menus')->get();
+        return view('menu',['menu' => $menu]);
+    }
+
+    function getDetailMenu(Request $request){
         $menu = DB::table('menus')->get();
         return view('menu',['menu' => $menu]);
     }

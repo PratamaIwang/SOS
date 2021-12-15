@@ -13,7 +13,7 @@ class Keranjang extends Migration
      */
     public function up()
     {
-        Schema::create('keranjang', function (Blueprint $table) {
+        Schema::create('keranjangs', function (Blueprint $table) {
             
             $table->string('email');
             $table->string('id_menu');
@@ -29,6 +29,6 @@ class Keranjang extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('keranjang');
+        Schema::dropIfExists('keranjangs');
     }
 }

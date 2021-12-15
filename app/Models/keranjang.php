@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class keranjang extends Model
 {
-    use HasFactory;
+    protected $fillable = ['email','id_menu','created_at','updated_at'];
 }

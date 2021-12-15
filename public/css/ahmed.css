@@ -1,8 +1,18 @@
 .content{
     padding-left: 1% ;
     padding-right: 1% ;
+    align-content: center;
 }
 
 .img-fluid{
     height: 60pt;
 }
+
+.menubox{
+    padding: 2%;
+    text-align:center;
+    border-style: solid;
+    margin:2%;
+    border-radius: 2;
+}
+

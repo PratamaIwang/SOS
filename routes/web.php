@@ -44,6 +44,7 @@ Route::get('/', function () {
 });
 
 Route::post('/addmenu',[MenuController::class, 'tambahMenu']) -> name('tambahMenu');
+Route::post('/addcart',[MenuController::class, 'addCart']) -> name('addcart');
 Route::post('/menu/destroy',[MenuController::class, 'destroyMenu'])-> name('hapus');
 //Route::get('/addmenu',function(){
 //    return view('addmenu');

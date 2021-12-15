@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Menu;
+use App\Models\keranjang;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -43,5 +44,15 @@ class MenuController extends Controller
         return view('menu',['menu' => $menu]);
     }
 
+
+    function addCart(Request $request){
+        $email = "dummy@gmail.com";
+        $id_menu = $request['beli'];
+        keranjang::Create([
+            'email'=> $email,
+            'id_menu' => $id_menu,
+        ]);
+        return redirect('menu');
+    }
     
 }

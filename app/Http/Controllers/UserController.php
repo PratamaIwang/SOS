@@ -21,7 +21,7 @@ class UserController extends Controller
         $data = $request->all();
         $check = $this->create($data);
 
-        return redirect("ahmed") -> withSuccess("anda telah register");
+        return redirect("login") -> withSuccess("anda telah register");
     }
 
     public function create(array $data){

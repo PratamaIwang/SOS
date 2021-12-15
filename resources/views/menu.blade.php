@@ -36,7 +36,7 @@
                 <p>{{$menus->nama_menu}}</p>
                 <p>Rp. {{$menus->harga}}</p>
                 <form action="{{route('addcart')}}" method="post">
-                    <button class="btn btn-primary" name="beli" id="beli" value="{{$menus->id_menu}}" type="submit"=>Beli</button>
+                    <button class="btn btn-primary" name="beli" id="beli" value="{{$menus->id_menu}}" type="submit">Masukkan ke Keranjang</button>
                 </form>
             </div>
 

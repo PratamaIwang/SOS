@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\krjgController;
+use App\Http\Controllers\pesananController;
 /*
 /*
 |--------------------------------------------------------------------------
@@ -34,7 +36,7 @@ Route::get('addmenu',function(){
 Route::get('menu',[MenuController::class, 'getMenu'],function(){
     return view('menu');
 });
-Route::get('keranjang',function(){
+Route::get('keranjang',[krjgController::class,'getCart'],function(){
     return view('keranjang');
 });
 
@@ -49,5 +51,5 @@ Route::post('/menu/destroy',[MenuController::class, 'destroyMenu'])-> name('hapu
 //Route::get('/addmenu',function(){
 //    return view('addmenu');
 //});
-
+Route::post('/krjg',[pesananController::class, 'setPesanan'])->name('krjg');
 Route::get('/med',[MenuController::class, 'getMenu']) -> name('getMenu');

@@ -35,24 +35,23 @@
                 alt="Sample image">
             </div>
             <div class="login-container col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                <form>
+                <form action="{{route('login')" method="POST">
                 <h1>Login Dulu Ya</h1>
                 <br>
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                    <label class="form-label" for="form3Example3">Email</label>
-                    <input type="email" id="form3Example3" class="form-control form-control-lg" placeholder="Masukin Email Kamu" />
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" id="email" class="form-control form-control-lg" placeholder="Masukin Email Kamu" />
                 </div>
 
                 <!-- Password input -->
                 <div class="form-outline mb-3">
-                    <label class="form-label" for="form3Example4">Password</label>
-                    <input type="password" id="form3Example4" class="form-control form-control-lg" placeholder="Isi Juga Passwordnya disini" />
+                    <label class="form-label" for="password">Password</label>
+                    <input type="password" id="password" class="form-control form-control-lg" placeholder="Isi Juga Passwordnya disini" />
                 </div>
 
                 <div class="text-center text-lg-start mt-4 pt-2">
-                    <button type="button" class="btn btn-primary btn-lg"
-                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                    <button type="submit" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
                     <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="register"
                         class="link-danger">Register</a></p>
                 </div>

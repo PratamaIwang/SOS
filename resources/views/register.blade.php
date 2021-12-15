@@ -36,27 +36,27 @@
                 alt="Sample image">
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                <form>
+                <form action="{{route('register')}}" method="POST">
                 <h1>Daftar dulu Dong hehe</h1>
                 <br>
                 <div class="form-outline mb-4">
                     <label class="form-label" for="form3Example3">Nama Kamu</label>
-                    <input type="text" id="input-nama" class="form-control form-control-lg" placeholder="Masukin Email Kamu" />
+                    <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Masukin Email Kamu" />
                 </div>
                 <!-- Email input -->
                 <div class="form-outline mb-4">
                     <label class="form-label" for="form3Example3">Email</label>
-                    <input type="email" id="input-nama" class="form-control form-control-lg" placeholder="Masukin Email Kamu" />
+                    <input type="email" id="email" name="email"class="form-control form-control-lg" placeholder="Masukin Email Kamu" />
                 </div>
 
                 <!-- Password input -->
                 <div class="form-outline mb-3">
                     <label class="form-label" for="form3Example4">Password</label>
-                    <input type="password" id="input-nama" class="form-control form-control-lg" placeholder="Isi Juga Passwordnya disini" />
+                    <input type="password" id="password" name="password" class="form-control form-control-lg" placeholder="Isi Juga Passwordnya disini" />
                 </div>
 
                 <div class="text-center text-lg-start mt-4 pt-2">
-                    <button type="button" class="btn btn-primary btn-lg"
+                    <button type="submit" class="btn btn-primary btn-lg"
                     style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
                     <p class="small fw-bold mt-2 pt-1 mb-0">Udah Punya Akun? <a href="login"
                         class="link-danger">Login yuk</a></p>

@@ -26,17 +26,15 @@
     </nav>
 </header>
 @csrf
-
+<br>
     <div id="content" class="container">
         <div class="row align-items-start">
-            @foreach ($menu as $menus)
+            @foreach ($order as $orders)
             
-            <div class="col col-lg-3 col-sm-12 menubox" id="menu-box">
-                <img src="{{asset('images/'.$menus->foto_menu)}}" class="img-fluid">
-                <p>{{$menus->nama_menu}}</p>
-                <p>Rp. {{$menus->harga}}</p>
-                <form action="{{route('addcart')}}" method="post">
-                    <button class="btn btn-primary" name="beli" id="beli" value="{{$menus->id_menu}}" type="submit">Masukkan ke Keranjang</button>
+            <div class="col col-lg-12 col-sm-12 menubox" id="menu-box">
+                <h3 class="col col-lg-12 col-sm-12 tebal">{{$orders->id_pesanan}}</h3><br>
+                <form action="" style="content-align:right;" class="col col-lg-12 col-sm-12">
+                    <button class="btn btn-primary col col-lg-2" value="{{$orders->id_pesanan}}" >Lihat Pesanan</button>
                 </form>
             </div>
 

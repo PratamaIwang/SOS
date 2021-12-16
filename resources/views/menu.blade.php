@@ -17,14 +17,14 @@
                     <li class="nav-item"><a class="nav-link" href="menu">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="keranjang">Keranjang</a></li>
                     <li class="nav-item active"><a class="nav-link" href="addmenu">Tambah Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="peesanan">Daftar Pesanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pesanan">Daftar Pesanan</a></li>
                     <li class="nav-item"><a class="nav-link" href="login">Log In</a></li>
                     <li class="nav-item"><a class="nav-link" href="logout">Log Out</a></li>
                 </ul>
             </div>
 
     </nav>
-</header>
+</header><br>
 @csrf
 
     <div id="content" class="container">
@@ -33,8 +33,10 @@
             
             <div class="col col-lg-3 col-sm-12 menubox" id="menu-box">
                 <img src="{{asset('images/'.$menus->foto_menu)}}" class="img-fluid">
-                <p>{{$menus->nama_menu}}</p>
+                <br><br>
+                <p class="tebal">{{$menus->nama_menu}}</p>
                 <p>Rp. {{$menus->harga}}</p>
+                <br>
                 <form action="{{route('addcart')}}" method="post">
                     <button class="btn btn-primary" name="beli" id="beli" value="{{$menus->id_menu}}" type="submit">Masukkan ke Keranjang</button>
                 </form>

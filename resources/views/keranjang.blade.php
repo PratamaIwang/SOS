@@ -21,7 +21,7 @@
             <li class="nav-item"><a class="nav-link" href="menu">Menu</a></li>
             <li class="nav-item"><a class="nav-link" href="keranjang">Keranjang</a></li>
             <li class="nav-item active"><a class="nav-link" href="addmenu">Tambah Menu</a></li>
-            <li class="nav-item"><a class="nav-link" href="peesanan">Daftar Pesanan</a></li>
+            <li class="nav-item"><a class="nav-link" href="pesanan">Daftar Pesanan</a></li>
             <li class="nav-item"><a class="nav-link" href="login">Log In</a></li>
             <li class="nav-item"><a class="nav-link" href="logout">Log Out</a></li>
         </ul>
@@ -44,9 +44,9 @@
             @endforeach
             
     </div></div>
-    
+    <br><br>
     <div>
-        <form class="col-lg-12 col-sm-12" action="{{route('krjg')}}" method="POST"style="text-align: right">
+        <form class="col-lg-12 col-sm-12" style="text-align:center;" action="{{route('krjg')}}" method="POST">
             <button class="btn btn-success btn-lg btn-pesan">Pesan Sekarang :)</button>
         </form>
     </div>

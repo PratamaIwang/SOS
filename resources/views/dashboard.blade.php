@@ -55,7 +55,8 @@
             <li class="active"><a class="scroll" href="/">Home</a></li>
             <li><a class="scroll" href="menu">Menu</a></li>
             <li><a class="scroll" href="keranjang">Keranjang</a></li>
-            <li><a class="scroll" href="addMenu">Tambah Menu</a></li>
+            <li><a class="scroll" href="addmenu">Tambah Menu</a></li>
+            <li><a class="scroll" href="pesanan">Daftar Pesanan</a></li>
             <li><a class="scroll" href="login">Log In</a></li>
           </ul>
         </div>

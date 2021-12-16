@@ -26,4 +26,10 @@ class pesananController extends Controller
     DB::table('keranjangs')->where('email', '=', $email)->delete();
     return redirect('keranjang');
     }
+
+
+    function getPesanan(){
+        $order = DB::table('pesanans')->get();
+        return view('pesanan',['order' => $order]);
+    }
 }

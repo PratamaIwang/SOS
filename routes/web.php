@@ -53,3 +53,6 @@ Route::post('/menu/destroy',[MenuController::class, 'destroyMenu'])-> name('hapu
 //});
 Route::post('/krjg',[pesananController::class, 'setPesanan'])->name('krjg');
 Route::get('/med',[MenuController::class, 'getMenu']) -> name('getMenu');
+Route::get('pesanan',[pesananController::class,'getPesanan'], function () {
+    return view('pesanan');
+});

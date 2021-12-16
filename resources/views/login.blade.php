@@ -16,7 +16,7 @@
             <li class="nav-item"><a class="nav-link" href="menu">Menu</a></li>
             <li class="nav-item"><a class="nav-link" href="keranjang">Keranjang</a></li>
             <li class="nav-item active"><a class="nav-link" href="addmenu">Tambah Menu</a></li>
-            <li class="nav-item"><a class="nav-link" href="peesanan">Daftar Pesanan</a></li>
+            <li class="nav-item"><a class="nav-link" href="pesanan">Daftar Pesanan</a></li>
             <li class="nav-item"><a class="nav-link" href="login">Log In</a></li>
             <li class="nav-item"><a class="nav-link" href="logout">Log Out</a></li>
             

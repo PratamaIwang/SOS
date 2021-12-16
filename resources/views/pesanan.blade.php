@@ -14,12 +14,11 @@
         </button>
             <div class="collapse navbar-collapse" id="navbarNav" style="text-align: right;">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="menu">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="keranjang">Keranjang</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="addmenu">Tambah Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pesanan">Daftar Pesanan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login">Log In</a></li>
-                    <li class="nav-item"><a class="nav-link" href="logout">Log Out</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('viewDashboard')}}">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('viewCart')}}">Keranjang</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="{{route('viewAddMenu')}}">Tambah Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('viewPesanan')}}">Daftar Pesanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('viewLogin')}}">Log In</a></li>
                 </ul>
             </div>
 
@@ -32,9 +31,10 @@
             @foreach ($order as $orders)
             
             <div class="col col-lg-12 col-sm-12 menubox" id="menu-box">
-                <h3 class="col col-lg-12 col-sm-12 tebal">{{$orders->id_pesanan}}</h3><br>
-                <form action="" style="content-align:right;" class="col col-lg-12 col-sm-12">
-                    <button class="btn btn-primary col col-lg-2" value="{{$orders->id_pesanan}}" >Lihat Pesanan</button>
+                <h3 class="col col-lg-8 col-sm-8 tebal" style="text-align: left">{{$orders->id_pesanan}}</h3>
+                <h3 class="col col-lg-4 col-sm-4 "style="text-align: left">Rp. {{$orders->total_harga}}</h3>
+                <form action="{{route('listOrder')}}" style="content-align:right;" class="col col-lg-12 col-sm-12">
+                    <button class="btn btn-primary col col-lg-2" id="idPesanan" name="idPesanan"value="{{$orders->id_pesanan}}" >Lihat Pesanan</button>
                 </form>
             </div>
 

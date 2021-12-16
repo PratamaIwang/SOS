@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class pesanan extends Model
 {
-    protected $fillable = ['email','id_pesanan','created_at','updated_at'];
+    protected $fillable = ['email','id_pesanan','total_harga','created_at','updated_at'];
 }

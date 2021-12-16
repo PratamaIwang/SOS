@@ -17,6 +17,7 @@ class Pesanan extends Migration
             
             $table->string('email');
             $table->string('id_pesanan');
+            $table->bigInteger('total_harga');
             $table->timestamps();
             
         });

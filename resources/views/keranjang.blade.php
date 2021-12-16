@@ -39,8 +39,12 @@
                 <img src="{{asset('images/'.$carts->foto_menu)}}" class="img-fluid">
                 <p>{{$carts->nama_menu}}</p>
                 <p>Rp. {{$carts->harga}}</p>
-            </div>
 
+                <form action="{{route('rmvOrder')}}" method="post">
+                    <button onclick="return confirm('Anda yakin ingin menghapus {{$carts->nama_menu}}?')" class="btn btn-danger" name="hapusCart" id="hapusCart" value="{{$carts->id_menu}}" type="submit">Batalkan Pesanan</button>
+                </form>
+            </div>
+            
             @endforeach
             
     </div></div>

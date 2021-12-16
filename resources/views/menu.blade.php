@@ -38,7 +38,11 @@
                 <p>Rp. {{$menus->harga}}</p>
                 <br>
                 <form action="{{route('addcart')}}" method="post">
-                    <button class="btn btn-primary" name="beli" id="beli" value="{{$menus->id_menu}}" type="submit">Masukkan ke Keranjang</button>
+                    <button class="btn btn-success" name="beli" id="beli" value="{{$menus->id_menu}}" type="submit">Masukkan ke Keranjang</button>
+                </form><br>
+
+                <form action="{{route('hapus')}}" method="post">
+                    <button onclick="return confirm('Anda yakin ingin menghapus {{$menus->nama_menu}}?')" class="btn btn-danger" name="hapusMenu" id="hapusMenu" value="{{$menus->id_menu}}" type="submit">Hapus Menu</button>
                 </form>
             </div>
 

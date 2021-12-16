@@ -48,6 +48,7 @@ Route::get('/', function () {
 Route::post('/addmenu',[MenuController::class, 'tambahMenu']) -> name('tambahMenu');
 Route::post('/addcart',[MenuController::class, 'addCart']) -> name('addcart');
 Route::post('/menu/destroy',[MenuController::class, 'destroyMenu'])-> name('hapus');
+Route::post('/keranjang/remove',[krjgController::class, 'removeOrder'])-> name('rmvOrder');
 //Route::get('/addmenu',function(){
 //    return view('addmenu');
 //});

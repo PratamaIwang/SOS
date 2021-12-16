@@ -34,7 +34,7 @@ class MenuController extends Controller
     }
 
     public function destroyMenu(Request $request){
-        $id_menu = $request['id_menu'];
+        $id_menu = $request['hapusMenu'];
         Menu::where('id_menu',$id_menu)->delete();
         return redirect("menu") -> withSuccess("menu telah terhapus");
     }

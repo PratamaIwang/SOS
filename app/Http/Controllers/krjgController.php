@@ -17,4 +17,10 @@ class krjgController extends Controller
 
         return view('keranjang',['cart'=>$cart]);
     }
+
+    public function removeOrder(Request $request){
+        $id_menu = $request['hapusCart'];
+        keranjang::where('id_menu',$id_menu)->delete();
+        return redirect("keranjang") -> withSuccess("menu telah terhapus");
+    }
 }
